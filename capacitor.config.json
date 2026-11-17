@@ -1,0 +1,9 @@
+{
+  "appId": "id.ac.unimus.telehealth.uts",
+  "appName": "Self-Assessment Telehealth",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  }
+}

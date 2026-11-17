@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F6F5F0;
+    color: #161615;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+
+  .font-serif-editorial {
+    font-family: 'Instrument Serif', Georgia, serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Crisp clinical scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EFECE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8C4B8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9E9A8E;
+}
